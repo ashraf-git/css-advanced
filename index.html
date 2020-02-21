@@ -5,23 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-Advanced</title>
     <style>
-        h1{
-            color: gray;
+        h1::before{
+            content: "hello ";
+            font-size: 34px;
+            background-color: darkseagreen;
+            color: darkslateblue;
         }
-        .special-effect:hover{
-            color: goldenrod;
-            font-size: 50px;
-            background: yellowgreen;
+        .special-effect::after{
+            content: " bye";
+            background: red;
         }
-        input:focus{
-            text-align: center;
-            color: crimson;
-            font-size: 30px;
-        }
-        li:nth-child(2n+1){background-color: darkcyan;} 
-        a:visited{
-            color: darkgoldenrod;
-        }      
     </style>
 </head>
 <body>
